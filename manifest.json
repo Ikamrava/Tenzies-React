@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "version": "1.00",
+  "name": "Tenzies",
+  "description": "Tenzies Game",
+  "action": {
+    "default_popup": "index.html"
+  }
+}
