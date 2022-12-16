@@ -9,19 +9,22 @@
     grid-template-columns: repeat(5, 2.5rem);
     column-gap: 15px;
     row-gap: 15px;
-   justify-content: center;
-   border-radius: 20px;
+    justify-content: center;
+    border-radius: 20px;
    
 
 }
 .number{
     
     box-shadow: 2px 2px 2px 2px;
+    height: 40px;
     border-radius: 5px;
     padding-top: .4rem;
     padding-bottom: .4rem;
     margin-bottom: 20px;
     font-weight: 900;
+    color: transparent;
+    background-size: cover;
     
 }
 
@@ -31,12 +34,23 @@ background-color: #5035FF;
 border-radius: 5px;
 padding-left: 30px;
 padding-right: 30px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
 
 }
 
 .howToPlay{
     margin-top: 20px;
     max-width: 300px;
+    min-width: 300px;
     margin-bottom: 30px;
     font-size: .8rem;
+    font-weight: 900;
+}
+
+.confetti{
+margin-left: auto;
+margin-right: auto;
 }

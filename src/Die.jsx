@@ -1,11 +1,14 @@
 import React from 'react'
+import one from "./Images/1.png"
 
 
 function Die(props) {
   const styles = {
-    backgroundColor: props.isHeld ? "#59E391" : "white"
+    
+    backgroundImage: props.isHeld ? `url(./src/Images/b${props.value}.png)` : `url(./src/Images/${props.value}.png)`
   }
-
+ 
+  
   return (
     
   

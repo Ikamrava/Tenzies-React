@@ -1,26 +1,29 @@
 #root {
   max-width: 800px;
   margin: 0 auto;
-  padding: 1.2rem;
+  padding: 1rem;
   text-align: center;
-  border-radius: 10px;
   background-color: #0B2434;
-  
-  font-family: 'Roboto', sans-serif;
-  
+  border-radius: 10px;
 }
 
 .App{
   background-color: #F5F5F5;
-  border-radius: calc(20px - 10px);
-  margin: 0;
-  padding: 20px;
-  
- 
-  
+  padding: 1rem 2.5rem;
+  border-radius: 20px;
 }
 
-
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
 
 @keyframes logo-spin {
   from {
