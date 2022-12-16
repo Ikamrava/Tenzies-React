@@ -10,7 +10,7 @@ function App() {
  let text = "Roll"
   const [newDices,setNewDicess] = useState(allNewDice())
   const [tenzies,setTenzies] = useState(false)
-  const [score,setScore]= useState(0)
+  const [score,setScore]= useState(1)
 
   useEffect(() => {
     const allHeld = newDices.every(dice => dice.isHeld)
@@ -63,18 +63,22 @@ function App() {
 
   function rollDice() {
     if(!tenzies) {
+      
         setNewDicess(oldDice => oldDice.map(dice => {
-          setScore(prev => prev + 1)
+          
             return dice.isHeld ? 
                 dice :
                 generatedNumber()
+                
 
         }))
     } else {
-        setScore(prev => prev + 1)
+        setScore(0)
         setTenzies(false)
         setNewDicess(allNewDice())
+        
     }
+    setScore(prev => prev + 1)
 }
 
 
