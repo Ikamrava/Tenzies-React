@@ -23,6 +23,7 @@
     font-size: 2rem;
     font-weight: 900;
     align-items: center;
+    cursor: pointer;
     
     
 }
@@ -41,7 +42,10 @@ margin-right: auto;
 margin-bottom: 40px;
 font-size: 1.5rem;
 
+
 }
+
+
 
 .howToPlay{
     max-width: 800px;
