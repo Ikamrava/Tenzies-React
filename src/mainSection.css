@@ -6,48 +6,48 @@
 
 .numbersWrapper{
     display: grid;
-    grid-template-columns: repeat(5, 2.5rem);
-    column-gap: 15px;
-    row-gap: 15px;
+    grid-template-columns: repeat(5, 5rem);
+    column-gap: 3rem;
+    row-gap: 30px;
     justify-content: center;
     border-radius: 20px;
+    align-items: center;
    
 
 }
 .number{
     
     box-shadow: 2px 2px 2px 2px;
-    height: 40px;
+    padding: 1.7rem 0;
     border-radius: 5px;
-    padding-top: .55rem;
-    padding-bottom: .4rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
     font-weight: 900;
+    align-items: center;
     
     
 }
 
 .roll{
-margin-top: 30px;
+
 background-color: #5035FF;
 color: white;
 font-weight: 900;
 border-radius: 5px;
-padding-left: 30px;
-padding-right: 30px;
+padding: 1rem 3.5rem;
 display: block;
+margin-top: 80px;
 margin-left: auto;
 margin-right: auto;
-margin-bottom: 20px;
+margin-bottom: 40px;
+font-size: 1.5rem;
 
 }
 
 .howToPlay{
-    margin-top: 20px;
-    max-width: 300px;
+    max-width: 800px;
     min-width: 300px;
-    margin-bottom: 30px;
-    font-size: .8rem;
+    margin: 50px 0;
+    font-size: 1.2rem;
     font-weight: 900;
 }
 
@@ -59,4 +59,6 @@ margin-right: auto;
 
 label{
     font-weight: 900;
+    font-size: 1.5rem;
+    padding-bottom: 50px;
 }

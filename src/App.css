@@ -1,10 +1,12 @@
 #root {
+  font-family: 'Roboto', sans-serif;
   max-width: 800px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
   background-color: #0B2434;
   border-radius: 10px;
+  width: 100vw;
 }
 
 .App{

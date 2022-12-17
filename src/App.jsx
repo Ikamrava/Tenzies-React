@@ -10,7 +10,7 @@ function App() {
  let text = "Roll"
   const [newDices,setNewDicess] = useState(allNewDice())
   const [tenzies,setTenzies] = useState(false)
-  const [score,setScore]= useState(1)
+  const [score,setScore]= useState(20)
 
   useEffect(() => {
     const allHeld = newDices.every(dice => dice.isHeld)
@@ -73,12 +73,12 @@ function App() {
 
         }))
     } else {
-        setScore(0)
+        setScore(21)
         setTenzies(false)
         setNewDicess(allNewDice())
         
     }
-    setScore(prev => prev + 1)
+    setScore(prev => prev - 1)
 }
 
 
@@ -87,7 +87,7 @@ function App() {
   return (
     <div className="App">
       {tenzies && <Confetti className = "confetti"/>}
-      <h3>{tenzies ? "You Won!" : "Tenzies"}</h3>
+      <h1>{tenzies ? "You Won!" : "Tenzies"}</h1>
       <p className='howToPlay'>Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
       <div className="numbersWrapper">
        {dieceElements}
